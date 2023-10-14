@@ -1,0 +1,9 @@
+.trigger {
+  width: 200px;
+}
+
+.item {
+  width: 200px;
+  color: red;
+  background-color: blue;
+}

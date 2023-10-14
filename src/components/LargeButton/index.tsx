@@ -5,7 +5,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   label: string;
 }
 
-export const Button: FC<ButtonProps> = ({ label, ...props }) => {
+export const LargeButton: FC<ButtonProps> = ({ label, ...props }) => {
   return (
     <S.Container>
       <S.Button {...props}>{label}</S.Button>

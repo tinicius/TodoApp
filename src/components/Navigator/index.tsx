@@ -1,9 +1,23 @@
+import { FC } from "react";
 import * as S from "./styles";
 
-export const Navigator = () => {
+import { FaArrowLeft } from "react-icons/fa6";
+
+interface NavigatorProps {
+  title: string;
+  navigateBack?: () => void;
+}
+
+export const Navigator: FC<NavigatorProps> = ({ title, navigateBack }) => {
   return (
     <S.Nav>
-      <S.Text>TODO</S.Text>
+      {navigateBack !== undefined && (
+        <button onClick={navigateBack}>
+          <FaArrowLeft />
+        </button>
+      )}
+
+      <S.Text>{title}</S.Text>
     </S.Nav>
   );
 };
