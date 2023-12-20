@@ -4,5 +4,5 @@ export const hello = (): string => {
     return "aa"
   } 
 
-  return "Hello Worald";
+  return "Hello World";
 };
