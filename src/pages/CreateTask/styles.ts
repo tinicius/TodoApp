@@ -1,18 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center;
+
+    height: 100%;
+  width: 100%; */
+
+  gap: 10px;
 `;
-
-export const Content = styled.div`
-    margin: 10px;
-`;
-
-export const ButtonsGroup = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-
-    margin-top: 10px;
-`;
-
