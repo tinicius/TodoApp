@@ -4,8 +4,6 @@
 name: React Tests CI
 
 on:
-  push:
-    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
@@ -18,7 +16,6 @@ jobs:
       matrix:
         node-version: [16.x]
         os: [ubuntu-latest]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
     - uses: actions/checkout@v3
